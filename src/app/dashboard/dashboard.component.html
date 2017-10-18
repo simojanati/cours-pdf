@@ -1,0 +1,28 @@
+<div class="page-title">
+  <!-- <h2><span class="fa fa-arrow-circle-o-left"></span> Accueil</h2> -->
+</div>
+<div class="page-content-wrap">
+  <div class="row">
+
+    <div class="content-frame-body content-frame-body-left" style="margin-top: 100px;">
+      
+      <div class="gallery" id="links">
+           
+          <a class="gallery-item" style="cursor: pointer" [routerLink]="['/classes', 'Ingénierie']" (click)="active('Ingenierie')" title="Ingénierie" data-gallery>
+              <div class="image">                              
+                  <img src="../../assets/assets/images/gallery/Ingenierie_logo.png" alt="Ingénierie"/>                                                                                                        
+              </div>                             
+          </a>
+
+          <a class="gallery-item" style="cursor: pointer" [routerLink]="['/classes', 'Management']" (click)="active('management')" title="Management" data-gallery>
+              <div class="image">
+                  <img src="../../assets/assets/images/gallery/management_logo.png" alt="Management"/>                                                                       
+              </div>                              
+          </a>                            
+
+      </div>
+  </div> 
+
+  </div>
+  <!-- END WIDGETS -->
+</div>
