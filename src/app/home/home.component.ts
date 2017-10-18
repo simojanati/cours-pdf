@@ -15,8 +15,7 @@ export class HomeComponent implements OnInit {
 
   logout(){
     sessionStorage.removeItem('currentUser');
-    this.router.navigate(['/']);
-    //window.location.reload();
+    this.router.navigate(['/login']);
   }
 
   active(element) {
