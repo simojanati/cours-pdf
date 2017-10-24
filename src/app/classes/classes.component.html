@@ -1,43 +1,28 @@
 <div class="page-title" style="text-align: center;padding: 20px 10px">
-   <h2 style="float: none!important;margin-bottom: 0px!important">{{filierer}}</h2>
+    <h2 style="float: none!important;margin-bottom: 0px!important">{{filierer}}</h2>
 </div>
 <div class="page-content-wrap">
-  <div class="row">
-      <div class="col-md-2">                        
-          <a [routerLink]="['/cours', 'COUR 1']" class="tile tile-danger tile-valign">COUR 1</a>                        
-      </div>                    
-      <div class="col-md-2">                        
-          <a [routerLink]="['/cours', 'COUR 2']" class="tile tile-danger tile-valign">COUR 2</a>
-      </div>                                        
-      <div class="col-md-2">                        
-          <a [routerLink]="['/cours', 'COUR 3']" class="tile tile-danger tile-valign">COUR 3</a>                        
-      </div>                    
-      <div class="col-md-2">                        
-          <a [routerLink]="['/cours', 'COUR 3']" class="tile tile-danger tile-valign">COUR 4</a>
-      </div>
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 5</a>                        
-      </div>                    
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 6</a>
-      </div>
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 7</a>                        
-      </div>                    
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 8</a>
-      </div>   
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 9</a>                        
-      </div>                    
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 10</a>
-      </div>   
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 11</a>                        
-      </div>                    
-      <div class="col-md-2">                        
-          <a class="tile tile-danger tile-valign">COUR 12</a>
-      </div>   
-  </div>
+    <div class="row">
+        <div class="col-md-3" *ngIf="filierer == 'Ingénierie'">
+            <a [routerLink]="['/cours', 'Programmation']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">Programmation</a>
+        </div>
+        <div class="col-md-3" *ngIf="filierer == 'Ingénierie'">
+            <a [routerLink]="['/cours', 'Base de données']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">Base de données</a>
+        </div>
+        <div class="col-md-3" *ngIf="filierer == 'Ingénierie'">
+            <a [routerLink]="['/cours', 'UML']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">UML</a>
+        </div>
+        <div class="col-md-3" *ngIf="filierer == 'Ingénierie'">
+            <a [routerLink]="['/cours', 'Electronique']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">Electronique</a>
+        </div>
+        <div class="col-md-3" *ngIf="filierer == 'Management'">
+            <a [routerLink]="['/cours', 'Marketing']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">Marketing</a>
+        </div>
+        <div class="col-md-3" *ngIf="filierer == 'Management'">
+            <a [routerLink]="['/cours', 'Finance']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">Finance</a>
+        </div>
+        <div class="col-md-3" *ngIf="filierer == 'Management'">
+            <a [routerLink]="['/cours', 'Gestion']" style="overflow: hidden;text-overflow: ellipsis;" class="tile tile-danger tile-valign">Gestion</a>
+        </div>
+    </div>
 </div>

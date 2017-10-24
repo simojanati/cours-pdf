@@ -1,6 +1,11 @@
 .gallery-item{
-    width: 15%;
+    width: 192px!important;
+    margin-left: 20px
 }
 .image{
-    max-height: 300px;
+    width: 192px!important;
+    height: 243px;
+}
+.cour{
+    margin-left: 20px;
 }
