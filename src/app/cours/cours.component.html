@@ -12,7 +12,7 @@
     <div class="content-frame-body content-frame-body-left">
 
       <div class="gallery" id="links">
-        <div>
+        <div *ngIf="cour === 'INFORMATIQUE LANGAGE'">
           <a class="gallery-item">
             <div style="font-size: 17px;overflow: hidden;text-overflow: ellipsis;width: 100%;margin-bottom: 5px;font-family: monospace;color: black">
               <b>Java</b>
@@ -52,7 +52,7 @@
         </div>
 
 
-        <div>
+        <div *ngIf="cour === 'INFORMATIQUE ANALYSE'">
           <a class="gallery-item" title="Uml">
             <div style="font-size: 17px;overflow: hidden;text-overflow: ellipsis;width: 100%;margin-bottom: 5px;font-family: monospace;color: black">
                 <b>Uml</b>
@@ -87,6 +87,10 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div *ngIf="cour !== 'INFORMATIQUE ANALYSE' && cour !== 'INFORMATIQUE LANGAGE'" style="text-align: center">
+          <h1>AUCUN COUR</h1>
         </div>
 
       </div>
